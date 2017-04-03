@@ -1,0 +1,38 @@
+sudo: false
+language: cpp
+compiler:
+  - gcc
+  - clang
+os:
+  - linux
+
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - gcc-4.8
+    - g++-4.8
+    - clang
+
+before install:
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew update          ; fi
+install:
+  - if [ "$CXX" = "g++" ]; then export CXX="g++-4.8" CC="gcc-4.8"; fi
+script:
+  - mkdir build
+  - cd build
+  - cmake -DCMAKE_CXX_COMPILER=$COMPILER .. && make
+  - ./hw5_tests/00_basic_tests/runBasicHW5Tests
+  - ./hw5_tests/01_constructor_test/runHW5ConstructorTest-1
+  - ./hw5_tests/02_add_to_list_test/runHW5AddToListTest-2
+  - ./hw5_tests/03_remove_test/runHW5removeTest-3
+  - ./hw5_tests/04_is_empty_test/runHW5isEmptyTest-4
+  - ./hw5_tests/05_size_test/runHW5SizeTest-5
+  - ./hw5_tests/06_contains_test/runHW5ContainsTest-6
+  - ./hw5_tests/07_get_frequency_test/runHW5GetFrequencyTest-7
+  - ./hw5_tests/08_copy_constructor_test/runHW5CopyConstructorTest-8
+  - ./hw5_tests/09_head_ptr_test/runHW5HeadPointerTest-9
+  - ./hw5_tests/10_tail_ptr_test/runHW5TailPointerTest-10
+  - ./hw5_tests/11_mid_ptr_test/runHW5MidPointerTest-11
+
