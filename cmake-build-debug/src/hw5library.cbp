@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="hw5library"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="clang"/>
+		<Option virtualFolders="CMake Files\;CMake Files\hw5_tests\;CMake Files\hw5_tests\lib\;CMake Files\hw5_tests\lib\gtest-1.7.0\;CMake Files\hw5_tests\lib\gtest-1.7.0\cmake\;CMake Files\hw5_tests\00_basic_tests\;CMake Files\hw5_tests\01_constructor_test\;CMake Files\hw5_tests\02_add_to_list_test\;CMake Files\hw5_tests\03_remove_test\;CMake Files\hw5_tests\04_is_empty_test\;CMake Files\hw5_tests\05_size_test\;CMake Files\hw5_tests\06_contains_test\;CMake Files\hw5_tests\07_get_frequency_test\;CMake Files\hw5_tests\08_copy_constructor_test\;CMake Files\hw5_tests\09_head_ptr_test\;CMake Files\hw5_tests\10_tail_ptr_test\;CMake Files\hw5_tests\11_mid_ptr_test\;CMake Files\src\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/src"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hw5_library">
+				<Option output="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/src/libhw5_library.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/src"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 hw5_library"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hw5_library/fast">
+				<Option output="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/src/libhw5_library.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/src"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 hw5_library/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/src/Node.hpp">
+			<Option target="hw5_library"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/src/SortedDoublyLinkedList.hpp">
+			<Option target="hw5_library"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/src/temp.cpp">
+			<Option target="hw5_library"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/src/temp.hpp">
+			<Option target="hw5_library"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\lib\gtest-1.7.0\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\lib\gtest-1.7.0\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\lib\gtest-1.7.0\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\hw5_tests\lib\gtest-1.7.0\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\hw5_tests\lib\gtest-1.7.0\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\hw5_tests\lib\gtest-1.7.0\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/00_basic_tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\00_basic_tests\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/00_basic_tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\00_basic_tests\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/01_constructor_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\01_constructor_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/01_constructor_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\01_constructor_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/02_add_to_list_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\02_add_to_list_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/02_add_to_list_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\02_add_to_list_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/03_remove_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\03_remove_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/03_remove_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\03_remove_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/04_is_empty_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\04_is_empty_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/04_is_empty_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\04_is_empty_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/05_size_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\05_size_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/05_size_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\05_size_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/06_contains_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\06_contains_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/06_contains_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\06_contains_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/07_get_frequency_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\07_get_frequency_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/07_get_frequency_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\07_get_frequency_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/08_copy_constructor_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\08_copy_constructor_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/08_copy_constructor_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\08_copy_constructor_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/09_head_ptr_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\09_head_ptr_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/09_head_ptr_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\09_head_ptr_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/10_tail_ptr_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\10_tail_ptr_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/10_tail_ptr_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\10_tail_ptr_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/11_mid_ptr_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\11_mid_ptr_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/11_mid_ptr_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\11_mid_ptr_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

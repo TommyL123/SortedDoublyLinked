@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="hw5_tests"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="clang"/>
+		<Option virtualFolders="CMake Files\;CMake Files\hw5_tests\;CMake Files\hw5_tests\lib\;CMake Files\hw5_tests\lib\gtest-1.7.0\;CMake Files\hw5_tests\lib\gtest-1.7.0\cmake\;CMake Files\hw5_tests\00_basic_tests\;CMake Files\hw5_tests\01_constructor_test\;CMake Files\hw5_tests\02_add_to_list_test\;CMake Files\hw5_tests\03_remove_test\;CMake Files\hw5_tests\04_is_empty_test\;CMake Files\hw5_tests\05_size_test\;CMake Files\hw5_tests\06_contains_test\;CMake Files\hw5_tests\07_get_frequency_test\;CMake Files\hw5_tests\08_copy_constructor_test\;CMake Files\hw5_tests\09_head_ptr_test\;CMake Files\hw5_tests\10_tail_ptr_test\;CMake Files\hw5_tests\11_mid_ptr_test\;CMake Files\src\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main">
+				<Option output="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/lib/gtest-1.7.0/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/lib/gtest-1.7.0"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/src"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/include"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/lib/gtest-1.7.0/Makefile&quot;  VERBOSE=1 gtest_main"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/lib/gtest-1.7.0/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/lib/gtest-1.7.0/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/lib/gtest-1.7.0/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main/fast">
+				<Option output="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/lib/gtest-1.7.0/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/lib/gtest-1.7.0"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/src"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/include"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/lib/gtest-1.7.0/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/lib/gtest-1.7.0/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/lib/gtest-1.7.0/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/lib/gtest-1.7.0/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest">
+				<Option output="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/lib/gtest-1.7.0/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/lib/gtest-1.7.0"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/src"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/include"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/lib/gtest-1.7.0/Makefile&quot;  VERBOSE=1 gtest"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/lib/gtest-1.7.0/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/lib/gtest-1.7.0/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/lib/gtest-1.7.0/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest/fast">
+				<Option output="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/lib/gtest-1.7.0/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/lib/gtest-1.7.0"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/src"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/include"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/lib/gtest-1.7.0/Makefile&quot;  VERBOSE=1 gtest/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/lib/gtest-1.7.0/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/lib/gtest-1.7.0/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/lib/gtest-1.7.0/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="runBasicHW5Tests">
+				<Option output="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/00_basic_tests/runBasicHW5Tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/00_basic_tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/src"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/include"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/00_basic_tests/Makefile&quot;  VERBOSE=1 runBasicHW5Tests"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/00_basic_tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/00_basic_tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/00_basic_tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="runBasicHW5Tests/fast">
+				<Option output="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/00_basic_tests/runBasicHW5Tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/00_basic_tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/src"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/include"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/00_basic_tests/Makefile&quot;  VERBOSE=1 runBasicHW5Tests/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/00_basic_tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/00_basic_tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/00_basic_tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="runHW5ConstructorTest-1">
+				<Option output="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/01_constructor_test/runHW5ConstructorTest-1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/01_constructor_test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/src"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/include"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/01_constructor_test/Makefile&quot;  VERBOSE=1 runHW5ConstructorTest-1"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/01_constructor_test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/01_constructor_test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/01_constructor_test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="runHW5ConstructorTest-1/fast">
+				<Option output="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/01_constructor_test/runHW5ConstructorTest-1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/01_constructor_test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/src"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/include"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/01_constructor_test/Makefile&quot;  VERBOSE=1 runHW5ConstructorTest-1/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/01_constructor_test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/01_constructor_test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/01_constructor_test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="runHW5AddToListTest-2">
+				<Option output="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/02_add_to_list_test/runHW5AddToListTest-2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/02_add_to_list_test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/src"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/include"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/02_add_to_list_test/Makefile&quot;  VERBOSE=1 runHW5AddToListTest-2"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/02_add_to_list_test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/02_add_to_list_test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/02_add_to_list_test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="runHW5AddToListTest-2/fast">
+				<Option output="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/02_add_to_list_test/runHW5AddToListTest-2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/02_add_to_list_test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/src"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/include"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/02_add_to_list_test/Makefile&quot;  VERBOSE=1 runHW5AddToListTest-2/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/02_add_to_list_test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/02_add_to_list_test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/02_add_to_list_test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="runHW5removeTest-3">
+				<Option output="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/03_remove_test/runHW5removeTest-3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/03_remove_test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/src"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/include"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/03_remove_test/Makefile&quot;  VERBOSE=1 runHW5removeTest-3"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/03_remove_test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/03_remove_test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/03_remove_test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="runHW5removeTest-3/fast">
+				<Option output="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/03_remove_test/runHW5removeTest-3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/03_remove_test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/src"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/include"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/03_remove_test/Makefile&quot;  VERBOSE=1 runHW5removeTest-3/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/03_remove_test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/03_remove_test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/03_remove_test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="runHW5isEmptyTest-4">
+				<Option output="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/04_is_empty_test/runHW5isEmptyTest-4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/04_is_empty_test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/src"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/include"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/04_is_empty_test/Makefile&quot;  VERBOSE=1 runHW5isEmptyTest-4"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/04_is_empty_test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/04_is_empty_test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/04_is_empty_test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="runHW5isEmptyTest-4/fast">
+				<Option output="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/04_is_empty_test/runHW5isEmptyTest-4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/04_is_empty_test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/src"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/include"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/04_is_empty_test/Makefile&quot;  VERBOSE=1 runHW5isEmptyTest-4/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/04_is_empty_test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/04_is_empty_test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/04_is_empty_test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="runHW5SizeTest-5">
+				<Option output="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/05_size_test/runHW5SizeTest-5" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/05_size_test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/src"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/include"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/05_size_test/Makefile&quot;  VERBOSE=1 runHW5SizeTest-5"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/05_size_test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/05_size_test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/05_size_test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="runHW5SizeTest-5/fast">
+				<Option output="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/05_size_test/runHW5SizeTest-5" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/05_size_test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/src"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/include"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/05_size_test/Makefile&quot;  VERBOSE=1 runHW5SizeTest-5/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/05_size_test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/05_size_test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/05_size_test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="runHW5ContainsTest-6">
+				<Option output="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/06_contains_test/runHW5ContainsTest-6" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/06_contains_test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/src"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/include"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/06_contains_test/Makefile&quot;  VERBOSE=1 runHW5ContainsTest-6"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/06_contains_test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/06_contains_test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/06_contains_test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="runHW5ContainsTest-6/fast">
+				<Option output="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/06_contains_test/runHW5ContainsTest-6" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/06_contains_test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/src"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/include"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/06_contains_test/Makefile&quot;  VERBOSE=1 runHW5ContainsTest-6/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/06_contains_test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/06_contains_test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/06_contains_test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="runHW5GetFrequencyTest-7">
+				<Option output="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/07_get_frequency_test/runHW5GetFrequencyTest-7" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/07_get_frequency_test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/src"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/include"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/07_get_frequency_test/Makefile&quot;  VERBOSE=1 runHW5GetFrequencyTest-7"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/07_get_frequency_test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/07_get_frequency_test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/07_get_frequency_test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="runHW5GetFrequencyTest-7/fast">
+				<Option output="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/07_get_frequency_test/runHW5GetFrequencyTest-7" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/07_get_frequency_test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/src"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/include"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/07_get_frequency_test/Makefile&quot;  VERBOSE=1 runHW5GetFrequencyTest-7/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/07_get_frequency_test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/07_get_frequency_test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/07_get_frequency_test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="runHW5CopyConstructorTest-8">
+				<Option output="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/08_copy_constructor_test/runHW5CopyConstructorTest-8" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/08_copy_constructor_test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/src"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/include"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/08_copy_constructor_test/Makefile&quot;  VERBOSE=1 runHW5CopyConstructorTest-8"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/08_copy_constructor_test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/08_copy_constructor_test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/08_copy_constructor_test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="runHW5CopyConstructorTest-8/fast">
+				<Option output="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/08_copy_constructor_test/runHW5CopyConstructorTest-8" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/08_copy_constructor_test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/src"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/include"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/08_copy_constructor_test/Makefile&quot;  VERBOSE=1 runHW5CopyConstructorTest-8/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/08_copy_constructor_test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/08_copy_constructor_test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/08_copy_constructor_test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="runHW5HeadPointerTest-9">
+				<Option output="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/09_head_ptr_test/runHW5HeadPointerTest-9" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/09_head_ptr_test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/src"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/include"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/09_head_ptr_test/Makefile&quot;  VERBOSE=1 runHW5HeadPointerTest-9"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/09_head_ptr_test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/09_head_ptr_test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/09_head_ptr_test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="runHW5HeadPointerTest-9/fast">
+				<Option output="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/09_head_ptr_test/runHW5HeadPointerTest-9" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/09_head_ptr_test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/src"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/include"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/09_head_ptr_test/Makefile&quot;  VERBOSE=1 runHW5HeadPointerTest-9/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/09_head_ptr_test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/09_head_ptr_test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/09_head_ptr_test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="runHW5TailPointerTest-10">
+				<Option output="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/10_tail_ptr_test/runHW5TailPointerTest-10" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/10_tail_ptr_test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/src"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/include"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/10_tail_ptr_test/Makefile&quot;  VERBOSE=1 runHW5TailPointerTest-10"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/10_tail_ptr_test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/10_tail_ptr_test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/10_tail_ptr_test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="runHW5TailPointerTest-10/fast">
+				<Option output="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/10_tail_ptr_test/runHW5TailPointerTest-10" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/10_tail_ptr_test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/src"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/include"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/10_tail_ptr_test/Makefile&quot;  VERBOSE=1 runHW5TailPointerTest-10/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/10_tail_ptr_test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/10_tail_ptr_test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/10_tail_ptr_test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="runHW5MidPointerTest-11">
+				<Option output="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/11_mid_ptr_test/runHW5MidPointerTest-11" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/11_mid_ptr_test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/src"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/include"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/11_mid_ptr_test/Makefile&quot;  VERBOSE=1 runHW5MidPointerTest-11"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/11_mid_ptr_test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/11_mid_ptr_test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/11_mid_ptr_test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="runHW5MidPointerTest-11/fast">
+				<Option output="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/11_mid_ptr_test/runHW5MidPointerTest-11" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/11_mid_ptr_test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/src"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/include"/>
+					<Add directory="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/11_mid_ptr_test/Makefile&quot;  VERBOSE=1 runHW5MidPointerTest-11/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/11_mid_ptr_test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/11_mid_ptr_test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/tommythemoney/Documents/TommyL123-HW5/cmake-build-debug/hw5_tests/11_mid_ptr_test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/00_basic_tests/basic_check.cpp">
+			<Option target="runBasicHW5Tests"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/01_constructor_test/constructor_test.cpp">
+			<Option target="runHW5ConstructorTest-1"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/02_add_to_list_test/add_to_list_test.cpp">
+			<Option target="runHW5AddToListTest-2"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/03_remove_test/remove_test.cpp">
+			<Option target="runHW5removeTest-3"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/04_is_empty_test/is_empty_test.cpp.cpp">
+			<Option target="runHW5isEmptyTest-4"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/05_size_test/size_test.cpp">
+			<Option target="runHW5SizeTest-5"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/06_contains_test/contains_test.cpp">
+			<Option target="runHW5ContainsTest-6"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/07_get_frequency_test/get_frequency_test.cpp">
+			<Option target="runHW5GetFrequencyTest-7"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/08_copy_constructor_test/copy_constructor_test.cpp">
+			<Option target="runHW5CopyConstructorTest-8"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/09_head_ptr_test/head_ptr_test.cpp">
+			<Option target="runHW5HeadPointerTest-9"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/10_tail_ptr_test/tail_ptr_test.cpp">
+			<Option target="runHW5TailPointerTest-10"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/11_mid_ptr_test/mid_ptr_test.cpp">
+			<Option target="runHW5MidPointerTest-11"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/src/gtest-all.cc">
+			<Option target="gtest"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/src/gtest_main.cc">
+			<Option target="gtest_main"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\lib\gtest-1.7.0\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\lib\gtest-1.7.0\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\lib\gtest-1.7.0\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\hw5_tests\lib\gtest-1.7.0\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\hw5_tests\lib\gtest-1.7.0\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/lib/gtest-1.7.0/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\hw5_tests\lib\gtest-1.7.0\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/00_basic_tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\00_basic_tests\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/00_basic_tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\00_basic_tests\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/01_constructor_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\01_constructor_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/01_constructor_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\01_constructor_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/02_add_to_list_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\02_add_to_list_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/02_add_to_list_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\02_add_to_list_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/03_remove_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\03_remove_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/03_remove_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\03_remove_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/04_is_empty_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\04_is_empty_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/04_is_empty_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\04_is_empty_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/05_size_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\05_size_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/05_size_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\05_size_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/06_contains_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\06_contains_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/06_contains_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\06_contains_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/07_get_frequency_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\07_get_frequency_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/07_get_frequency_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\07_get_frequency_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/08_copy_constructor_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\08_copy_constructor_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/08_copy_constructor_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\08_copy_constructor_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/09_head_ptr_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\09_head_ptr_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/09_head_ptr_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\09_head_ptr_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/10_tail_ptr_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\10_tail_ptr_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/10_tail_ptr_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\10_tail_ptr_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/11_mid_ptr_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\11_mid_ptr_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/hw5_tests/11_mid_ptr_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\hw5_tests\11_mid_ptr_test\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+		<Unit filename="/Users/tommythemoney/Documents/TommyL123-HW5/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
