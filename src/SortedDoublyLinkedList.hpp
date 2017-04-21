@@ -44,197 +44,222 @@ public:
 
 template<class ItemType>
 SortedDoublyLinkedList<ItemType>::SortedDoublyLinkedList() : head(nullptr), tail(),
-                                                             size(0) {}
+                                                             size(0) { }
 
 template<class ItemType>
-SortedDoublyLinkedList<ItemType>::SortedDoublyLinkedList(std::shared_ptr<Node<ItemType>> head,
-                                                         std::weak_ptr<Node<ItemType>> tail, int size) :
-        head(head), tail(tail), size(size) {}
+SortedDoublyLinkedList<ItemType>::SortedDoublyLinkedList(std::shared_ptr<Node<ItemType>> head, std::weak_ptr<Node<ItemType>> tail, int size) :
+        head(head), tail(tail), size(size) { }
 
 template<class ItemType>
 SortedDoublyLinkedList<ItemType>::SortedDoublyLinkedList(const SortedDoublyLinkedList<ItemType> &list) {
+    
+    
+    
+    this->head = nullptr;
+    this->tail = nullptr;
 
-
-    if (list.isEmpty())
+    if (list.head == nullptr)
     {
         return;
     }
-
-    auto cur = list.head;
-
-    while(cur)
+    else
     {
-        this->add(cur.get()->getItem() );
-        cur = cur.get()->getNext();
+        vector<int> vecList = list.toVector();
+        for (auto a:vecList) {
+            this->add(a);
+        }
     }
-
-    }
-
-    //TODO - Implement the copy constructor
-
-
+}
 
 template<class ItemType>
 std::shared_ptr<Node<ItemType>> SortedDoublyLinkedList<ItemType>::getPointerTo(const ItemType &target) const {
-    Node<ItemType> current = *head;
+   
 
-    auto cur = this->head;
-    while (cur != nullptr && cur.get()->getItem()!= target)
-        cur = cur.get()->getNext();
-    return cur;
 
-    //TODO - Return the Node pointer that contains the target(return nullptr if not found)
+    if(!this->contains(target)){
+        return nullptr;
+    }
+    else
+    {
+        std::shared_ptr<Node<ItemType>> current = head;
+        while (current->getItem() != target) {
+            current = current->getNext();
+        }
+        return current;
+    }
+
+
+
 }
-// 7828, 8199, 2238, 4947, 2244, 3691
-
 
 template<class ItemType>
 SortedDoublyLinkedList<ItemType>::~SortedDoublyLinkedList() {
-    head = nullptr;
-    tail = nullptr;
-    size = 0;
-
-    //TODO - Implement the destructor
+    
+    this->head = nullptr;
 }
 
 template<class ItemType>
 int SortedDoublyLinkedList<ItemType>::getCurrentSize() const {
+    
+    int count = 0;
 
+    std::shared_ptr<Node<ItemType>> curr = head;
 
-    return size;
-
-    //TODO - Return the current size
+    while (curr != nullptr) {
+        curr = curr->getNext();
+        count++;
+    }
+    return count;
+    
 }
 
 template<class ItemType>
 bool SortedDoublyLinkedList<ItemType>::isEmpty() const {
+   
     if (this->head == nullptr) {
         return true;
     } else {
         return false;
-     }
-    //TODO - Return True if the list is empty
+    }
 }
 
 template<class ItemType>
 bool SortedDoublyLinkedList<ItemType>::add(const ItemType &newEntry) {
 
-    if( newEntry != NULL)
+    std::shared_ptr<Node<ItemType>> newNode = std::make_shared<Node<ItemType>>(newEntry);
+    std::shared_ptr<Node<ItemType>> curr = head;
+    std::shared_ptr<Node<ItemType>> prev;
+
+    if (this->head == nullptr)
     {
-        auto cur = std::make_shared<Node<ItemType >>(newEntry);
+        head = tail = newNode;
+    }
 
-        if(!(this->isEmpty()))
+    else
+    {
+
+        while (curr != nullptr && curr->getItem() <= newEntry)
         {
-            auto curPtr = head;
-            auto curnext = head.get()->getNext();
-            auto curprev = head.get()->getPrev();
-            while (curPtr != nullptr && curPtr.get()->getItem() < newEntry )
-            {
-                curprev = curPtr;
-                curPtr = curPtr.get()->getNext();
-            }
+            prev = curr;
+            curr = curr->getNext();
+        }
 
-            cur.get()->setNext(curPtr);
-            cur.get()->setPrev(curprev);
-            if(curprev.lock().get() != nullptr)
-                curprev.lock().get()->setNext( cur);
-            if(curPtr != nullptr)
-                curPtr.get()->setPrev(cur);
+        if (curr == nullptr) {
+            newNode->setPrev(tail);
+            tail->setNext(newNode);
+            tail = newNode;
+        }
 
-            if(curPtr == head )
-                head = cur;
-            if(curPtr == nullptr)
-                tail = cur;
+        else if (curr == head)
+        {
+            newNode->setNext(head);
+            head->setPrev(newNode);
+            head = newNode;
 
         }
+
         else
         {
-            head = tail = cur;
+            newNode->setNext(curr);
+            newNode->setPrev(prev);
+            prev->setNext(newNode);
+            curr->setPrev(newNode);
         }
-
-        size++;
-        return true;
-
     }
-    return false;
 
-    //TODO - Add an item to the sorted Doubly Linked list
+    size++;
+
+    return true;
+
+
 }
 
 template<class ItemType>
 bool SortedDoublyLinkedList<ItemType>::remove(const ItemType &anEntry) {
 
-    bool found=false;
-    if(this->isEmpty())
-        return found;
-    auto cur = this->head;
-    if(cur.get()->getItem()== anEntry)
-    {
-        head = head.get()->getNext();
-        size--;
-        if(size==0)
-        {
-            head=tail= nullptr;
-        }
-        return true;
-    }
-    auto aprev= cur;
-    cur=cur.get()->getNext();
-    while(!found && cur)
-    {
-        if (cur.get()->getItem() == anEntry)
-            found = true;
-        else
-        {
-            aprev=cur;
-            cur=cur.get()->getNext();
-        }
-    }
-    if(found)
-    {
-        aprev.get()->setNext(cur.get() ->getNext());
-        size--;
-    }
-    if(cur == tail)
-        tail = aprev;
+    std::shared_ptr<Node<ItemType>> curr = head;
+    std::shared_ptr<Node<ItemType>> prev;
 
-    return found;
 
-    //TODO - Remove the Item(anEntry) from the list - Return true if successful
+
+    if(!this->contains(anEntry))
+    {
+        return false;
+    }
+    else
+    {
+        while (curr->getItem() != anEntry)
+        {
+            prev = curr;
+            curr = curr->getNext();
+        }
+
+        if (curr == head)
+        {
+            head = curr->getNext();
+            curr = nullptr;
+            size--;
+            return true;
+        }
+
+        if (curr != tail)
+        {
+            curr->getNext()->setPrev(curr->getPrev());
+        }
+
+        prev->setNext(curr->getNext());
+        if(curr == tail)
+        {
+            tail = prev;
+        }
+        curr = nullptr;
+    }
+    size--;
+
+    return true;
 }
 
 template<class ItemType>
 bool SortedDoublyLinkedList<ItemType>::contains(const ItemType &anEntry) const {
 
+    shared_ptr<Node<ItemType>> current = head;
 
-    auto cur = this->head;
-    while (cur != nullptr && cur.get()->getItem()!= anEntry)
-        cur = cur.get()->getNext();
-    return cur == nullptr?false: true;
+    while (current != nullptr)
+    {
+        if (current->getItem() == anEntry)
+        {
+            return true;
+            
+        } else {
+            current = current->getNext();
+        }
+    }
 
-    //TODO - Check if the List contains the Item(anEntry)- Return true if successful
+    return false;
 }
 
 template<class ItemType>
 int SortedDoublyLinkedList<ItemType>::getFrequencyOf(const ItemType &anEntry) const {
+    
+    int count = 0;
+    
+    shared_ptr<Node<ItemType>> curr = head;
 
-    int counter =0;
-    auto cur = this->head;
-    while (cur != nullptr)
-    {
-        if (cur.get()->getItem() == anEntry)
-            counter ++;
-        cur = cur.get()->getNext();
+    while (curr != nullptr) {
+        
+        if (curr->getItem() == anEntry) {
+            
+            count++;
+        }
+        curr = curr->getNext();
     }
-    return counter;
-
-    //TODO - Return the frequency of the Item(anEntry) in the list
+    return count;
 }
 
 template<class ItemType>
 vector<ItemType> SortedDoublyLinkedList<ItemType>::toVector() const {
     // DO NOT MODIFY THIS FUNCTION
-    vector<ItemType> myVector;
+    vector <ItemType> myVector;
     std::shared_ptr<Node<ItemType>> cur;
     cur = this->head;
     while (cur != nullptr) {
@@ -243,3 +268,6 @@ vector<ItemType> SortedDoublyLinkedList<ItemType>::toVector() const {
     }
     return myVector;
 }
+
+
+
