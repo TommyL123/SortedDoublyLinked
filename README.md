@@ -4,7 +4,13 @@
 
 TODO - Update your name in this readme.
 
+
+// Tommy Lik
+
+
 TODO - Add a badge from travis CI here
+
+// [![Build Status](https://travis-ci.com/csc340-spring-2017/TommyL123-HW5.svg?token=t6yXgSazaGDsBYommHFk&branch=master)](https://travis-ci.com/csc340-spring-2017/TommyL123-HW5)
 
 ##Problem statement:
 Implement a backend for a Class that represents a Sorted Doubly Linked List(Ascending order). 
